@@ -67,3 +67,16 @@ All user-visible strings live inline in `index.html` with both languages side-by
 ```
 
 The `textContent` shown initially is the Japanese version (matches `<html lang="ja">`). `assets/js/i18n.js` swaps to the chosen language on load.
+
+## App privacy policies
+
+The English Keep Notifying Me policy lives at
+`apps/keep-notifying-me/privacy/index.html`, served at
+`https://www.asssk.me/apps/keep-notifying-me/privacy/` after deployment.
+The company homepage footer links to it; it shares the site stylesheet and uses
+`assets/css/privacy.css` for its reading layout. It works without JavaScript.
+
+The effective date is September 25, 2026. Support correspondence is retained as
+long as reasonably necessary for customer inquiry history, incident investigation
+and follow-up support, with no fixed automatic deletion period. Deletion requests
+go to `info@asssk.me`. Update the effective date when changing the policy.

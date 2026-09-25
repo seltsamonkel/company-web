@@ -1,0 +1,19 @@
+/* Keep policy layout separate from the company landing page. */
+.policy-content {
+  max-width: 808px;
+  padding-top: 48px;
+  padding-bottom: 64px;
+  font-size: 17px;
+  overflow-wrap: anywhere;
+}
+.policy-content h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+}
+.policy-content h2 {
+  margin-top: 2rem;
+  font-size: 24px;
+  line-height: 1.35;
+}
+.policy-content a { text-decoration: underline; }
+.policy-home { margin-left: auto; font-size: 14px; }
