@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Keep Notifying Me — foreground service demonstration</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.6; }
+    body { margin: 0; }
+    main { max-width: 760px; margin: auto; padding: 24px; }
+    h1 { font-size: clamp(1.6rem, 5vw, 2.2rem); line-height: 1.2; }
+    h2 { font-size: 1.25rem; margin-top: 2rem; }
+    a { color: #0865c3; text-underline-offset: 3px; }
+    video { display: block; width: 100%; max-height: 75vh; background: #111; border-radius: 8px; }
+    li { margin-block: .4rem; }
+    .note { border-left: 3px solid #888; padding-left: 16px; }
+    @media (prefers-color-scheme: dark) { a { color: #8bc4ff; } }
+  </style>
+</head>
+<body>
+<main>
+  <p>Asssk LLC · Google Play review</p>
+  <h1>Keep Notifying Me: foreground service demonstration</h1>
+  <p>The optional <strong>Prefer phone speaker</strong> feature uses a <code>mediaPlayback</code> foreground service to play a brief reminder sound. This recording shows the user enabling the feature, triggering a test reminder, and checking that playback stops automatically. A second test shows cancellation.</p>
+  <video controls playsinline preload="metadata" aria-label="Silent screen recording demonstrating the speaker reminder foreground service" aria-describedby="recording-scope">
+    <source src="demo-1.0.0-v2.mp4" type="video/mp4">
+    Your browser cannot play this video. Use the MP4 link below.
+  </video>
+  <p><a href="demo-1.0.0-v2.mp4">Open or download the MP4 recording</a> · 1 minute 37 seconds · no audio or narration</p>
+  <h2>Steps demonstrated</h2>
+  <ol>
+    <li>Open <strong>Setup</strong> and enable <strong>Precise timing</strong>.</li>
+    <li>Enable <strong>Prefer phone speaker</strong> and review its disclosure.</li>
+    <li>Tap <strong>Test speaker reminder</strong> to start playback; observe automatic stopping.</li>
+    <li>Open troubleshooting and diagnostics to inspect playback status.</li>
+    <li>Run a second test and cancel playback.</li>
+  </ol>
+  <h2>Recording guide</h2>
+  <ul>
+    <li><strong>0:00</strong> — Setup.</li>
+    <li><strong>0:08</strong> — Enable the feature and review its disclosure.</li>
+    <li><strong>0:24</strong> — Feature enabled.</li>
+    <li><strong>0:40</strong> — Test playback and automatic stopping.</li>
+    <li><strong>0:45</strong> — Troubleshooting.</li>
+    <li><strong>1:00</strong> — Diagnostics.</li>
+    <li><strong>1:32</strong> — Second test and cancellation.</li>
+  </ul>
+  <p>Times are approximate.</p>
+  <p class="note" id="recording-scope"><strong>Recording scope:</strong> Pixel 9a, Android API 37, app version 1.0.0 (version code 2). This debug-signed build uses the same app source as the submitted release, with debug packaging; it was not installed through Google Play. The 1080 × 2424 screen capture is silent and demonstrates the test workflow. It does not establish physical speaker output or scheduled reminder delivery.</p>
+</main>
+</body>
+</html>
